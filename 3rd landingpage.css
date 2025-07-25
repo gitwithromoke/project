@@ -24,11 +24,9 @@ header {
 .background-image {
   position: relative;
   height: 100vh;
-  /* padding: 100px; */
   width: 100%;
   opacity: 0.7;
   z-index: 1;
-  /* border:2px solid black; */
   margin-bottom: 100px;
   background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
@@ -39,7 +37,6 @@ header {
 
 nav {
   width: 80%;
-  /* border: 2px solid green; */
   margin: auto;
   align-items: center;
   display: flex;
@@ -48,18 +45,16 @@ nav {
 }
 
 nav a button {
+  border: 2px solid black;
   padding: 10px 12px;
   border-radius: 5px;
   bottom: 20px;
   background-color: red;
   color: white;
-  font-size: 1em;
-  font-weight: bold;
   border: none;
 }
 
 .movies {
-  /* border: 2px solid red; */
   width: 50%;
   margin: auto;
   text-align: center;
@@ -73,10 +68,11 @@ nav a button {
 
 .movies h4 {
   color: white;
+  text-align: center;
 }
 
 .movies p {
-  margin-bottom: 10px;
+  margin-top: 20px;
   color: white;
 
 }
@@ -91,114 +87,127 @@ nav a button {
 
 .movies a button {
   padding: 10px 14px;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #f52222;
-  font-weight: bold;
+  font-weight: 900;
   color: white;
   font-family: 'Gill Sans', sans-serif;
-  /* font-size: 1.2em; */
   text-decoration: none;
   border: none;
+
+
+}@media(max-width:1049px){
+  .net{
+    width: 150px;
+  }
+}
+@media(max-width:1049px){
+  .nav {
+    justify-content: space-around;
+    width: 50%;  
+  }
+}
+@media(max-width:327px){
+  .nav {
+    justify-content: space-around;
+    width: 40%;
+  }
+}
+@media(max-width:1049px){
+  .nav a button{
+    padding: 10px;
+    bottom: 10px;   
+  }
+}
+
+@media(max-width:951px){
+  .movies{
+   width: 90%;
+   margin: auto;
+   font-size: 1em;
+   font-weight: 500;
+   text-align: center;
+  }
+}
+@media(max-width:887px){
+  .movies h1{
+    margin: auto;
+    font-size: 0.9em;
+    align-items: center;
+  }
+}
+@media(max-width:320px){
+  .movies h1{
+   margin: auto;
+   font-size:0.9em;
+   text-align: center;
+  }
+}
+@media(max-width:459px){
+  .movies h4{
+   margin: auto;
+   font-size: 0.5em;
+   text-align: center;
+  }
+}
+@media(max-width:623px){
+  .movies p{
+   margin: auto;
+   font-size: 0.5em;
+   text-align: center;
+  }
+}
+
+@media(max-width:530px){
+  .movies input{
+    padding:8px 10px;
+    left:900px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+@media(max-width:358px){
+  .movies a button{
+    font-weight:300;
+    padding: 12px 10px;
+  }
+  
+}
+@media(max-width:960px){
+  .movies a button{
+    font-weight:100;
+    padding: 14px 12px;
+  }
+  
+}
+@media(max-width:620px){
+  .movies a button{
+    font-weight:100;
+    padding: 10px 10px;
+  }
+  
+}
+@media(max-width:526px){
+  .movies a button{
+    padding: 8px 8px;
+    right:900px;
+    font: weight 100;;
+  }
+  
+}
+@media(max-width:354px){
+  .movies a button{
+    padding: 8px 8px;
+    right:100px;
+    font: weight 100;;
+  }
+  
 }
 
 .fa-solid {
   color: #000000
 }
 
-@media (max-width:1049px) {
-  nav img {
-    width: 100px;
-  }
-
-  nav a button {
-    padding: 10px;
-  }
-}
-
-@media(max-width:994px) {
-  .movies h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-  }
-}
-
-@media(max-width:764px) {
-  .movies h1 {
-    font-size: 2em;
-    font-weight: 500;
-  }
-}
-
-@media(max-width:602px) {
-  .movies h1 {
-    font-size: 1.6em;
-    font-weight: 400;
-  }
-}
-
-@media(max-width:474px) {
-  .movies h1 {
-    font-size: 1.2em;
-    font-weight: 300;
-  }
-}
-
-@media(max-width:352px) {
-  .movies h1 {
-    font-size: 1em;
-    font-weight: 300;
-  }
-}
-
-@media(max-width:968px) {
-  .movies input {
-    margin-bottom: 10px;
-    padding: 10px 50px;
-  }
-}
-
-@media(max-width:544px) {
-  .movies input {
-    padding-left: 20px;
-    padding: 10px 40px;
-  }
-}
-
-@media(max-width:446px) {
-  .movies input {
-   padding: 10px 30px;
-   
-  }
-}
-@media(max-width:422px){
-   .movies input {
-   padding: 10px 20px;
-}
- 
-   
-}
-
-@media(max-width:406px){
-   .movies input {
-   padding: 10px 10px;
-}
- 
-   
-}
-@media(max-width:380px){
-   .movies input {
-   padding: 10px 8px;
-}
- 
-   
-}
-@media(max-width:325px){
-   .movies input {
-   padding: 10px 5px;
-}
- 
-   
-}
 
 /* sect-2 */
 
